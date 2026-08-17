@@ -3,7 +3,7 @@ import { assets } from '../data/assets'
 
 describe('starter craft library', () => {
   it('contains a broad original starter set', () => {
-    expect(assets.length).toBeGreaterThanOrEqual(40)
+    expect(assets.length).toBeGreaterThanOrEqual(120)
   })
 
   it('uses unique ids', () => {
@@ -13,7 +13,7 @@ describe('starter craft library', () => {
 
   it('covers each core craft category', () => {
     expect(new Set(assets.map((asset) => asset.category))).toEqual(
-      new Set(['stickers', 'washi', 'papers', 'stamps']),
+      new Set(['stickers', 'washi', 'papers', 'ephemera', 'stamps']),
     )
   })
 

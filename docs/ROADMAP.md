@@ -55,3 +55,18 @@ Every major feature should answer at least one:
 - Does this make the journal feel more owned?
 - Does this protect the user's work?
 - Does this reduce friction without increasing pressure?
+
+
+## Craft library directions
+
+- user-made sticker and ephemera packs
+- importable local SVG/PNG packs with clear provenance
+- user favorites and recently used materials
+- seasonal packs that remain optional rather than engagement events
+
+## Reflection directions
+
+- user-authored prompt decks
+- hide Reflect entirely for users who only want a scrapbook
+- usability study on whether prompt explanations feel helpful or intrusive
+- no automated psychological inference from private journal text

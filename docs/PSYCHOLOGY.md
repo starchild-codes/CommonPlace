@@ -109,3 +109,93 @@ The core product question is:
 > Can a digital journal provide the expressive freedom of a scrapbook without importing either the complexity of a professional design tool or the behavioral pressure of a habit tracker?
 
 That is the standard new features should be judged against.
+
+## 11. Reflection is optional, not a treatment claim
+
+v0.2 adds a **Reflect** drawer. It is deliberately framed as a set of optional doorways into a page rather than a mental-health intervention.
+
+The drawer does not:
+
+- diagnose a condition
+- score mood
+- infer risk from writing
+- prescribe a coping technique
+- promise that journaling will improve wellbeing
+- force gratitude, positivity, disclosure, or a daily reflection ritual
+
+Every prompt can be skipped. “Not today” is a valid response.
+
+This distinction matters because evidence on expressive writing is mixed. Some individual studies report benefits in particular groups or tasks, while larger reviews have found small, inconsistent, or null average effects. Commonplace therefore uses psychology to design *choices and prompts*, not to market journaling as therapy.
+
+## 12. Emotion vocabulary without mood scoring
+
+The Reflect drawer includes a small feeling-word palette. Its purpose is not to quantify emotion. It provides more vocabulary than “good / bad / fine” and allows several words to coexist.
+
+Research on affect labeling suggests that naming emotional material can alter emotional processing, while emotion-differentiation research asks how specifically people distinguish their affective states. These literatures are not a license to claim that selecting a word in Commonplace improves mental health.
+
+**Design implication:** provide optional words, allow mixed feelings, and never turn them into a score, graph, streak, or “emotional accuracy” metric.
+
+## 13. Observation and interpretation are separate prompt families
+
+Several prompts distinguish between:
+
+- what a camera could have recorded
+- what the user inferred
+- what remains unknown
+- one alternative explanation
+
+This is a cognitive-flexibility affordance rather than a truth detector. The interface never tells the user that their interpretation is irrational or incorrect.
+
+**Design implication:** make alternative interpretations available without privileging one as the “right” answer.
+
+## 14. Perspective without minimizing experience
+
+A small set of prompts invite users to imagine:
+
+- what they would say to a friend
+- what future-self would need to know
+- how a caring observer might describe the scene
+
+Self-distancing research has found associations between observer-like reflection and lower reactivity in some experimental and correlational settings. Commonplace treats that as a design inspiration, not a universal rule.
+
+**Design implication:** offer perspective as an optional lens, never as “you are overreacting.”
+
+## 15. Self-kindness without forced positivity
+
+Prompts such as “rewrite this so it stays honest without being needlessly cruel to yourself” borrow the *structure* of self-compassion writing: kindness, perspective, and common humanity.
+
+The wording avoids:
+
+- body evaluation
+- appearance reassurance
+- “love yourself” demands
+- compulsory optimism
+
+The target is balanced language, not a happier answer.
+
+## 16. Values instead of productivity goals
+
+The Reflect drawer can ask what mattered in a situation or which values were in tension. It does not convert those values into goals, reminders, or achievement badges.
+
+**Design implication:** meaning can be explored without becoming another productivity system.
+
+## 17. Tiny-effort prompts reduce initiation cost
+
+Prompts are filterable by rough effort:
+
+- 30 seconds
+- about 2 minutes
+- deeper
+- anything
+
+These are not timers or quotas. They are expectations about cognitive effort, intended to make the first move easier when a blank page feels expensive.
+
+## 18. “Close the page” is a first-class action
+
+Some prompts explicitly permit stopping:
+
+- leave one question unanswered
+- decide that there is nothing to solve tonight
+- mark the page “finished enough”
+
+This is consistent with the broader Commonplace stance that journaling does not need to culminate in insight, catharsis, positivity, or a lesson.

@@ -16,12 +16,15 @@ Commonplace deliberately has no streak counter, no word-count goal, no social fe
 - **Six paper tones** from ivory to lavender
 - **Freeform page canvas** with drag, resize, rotate, layer, duplicate, lock, and delete
 - **Text styling** with handwriting, serif, literary, rounded, clean, and typewriter voices
-- **46 original decorative assets** across stickers, washi, torn papers, and stamps
+- **130+ original decorative assets** across stickers, washi, torn papers, ephemera, and stamps
+- **Ephemera drawer** with fictional tickets, library cards, postcards, receipts, map fragments, astronomy charts, photo strips, and more
 - **Photo uploads** stored locally with the journal
 - **Undo / redo**
 - **Autosave to the browser**
 - **Focus mode** that removes the editor chrome
 - **Calm mode** that keeps performance-like feedback out of the experience
+- **Optional Reflect deck** with low-pressure prompts for noticing, emotion vocabulary, perspective, values, memory, and closure
+- **Feeling palette** for more precise emotion words without mood scores or diagnoses
 - **PNG export** for finished pages
 - **JSON backup / restore** for the whole journal shelf
 - **No analytics or cloud account** in v0.1
@@ -52,12 +55,13 @@ Choose a palette, cover texture, and emblem before opening the journal. The cove
 
 ### Page editor
 
-The editor has four primary tools:
+The editor has five primary tools:
 
 - **Write** — add a text fragment and style its voice
 - **Decorate** — stickers, washi, scraps, and stamps
 - **Paper** — page pattern and tone
 - **Photos** — local image uploads
+- **Reflect** — optional psychology-informed prompts with no scoring, diagnosis, or forced positivity
 
 Select anything on the page to reveal its inspector. Unselected tools stay out of the way.
 
@@ -110,6 +114,8 @@ Commonplace/
 ├── src/
 │   ├── components/
 │   ├── data/assets.ts
+│   ├── data/extraAssets.ts
+│   ├── data/reflectionPrompts.ts
 │   ├── store/useJournalStore.ts
 │   ├── tests/
 │   ├── utils/model.ts
@@ -124,7 +130,7 @@ Commonplace/
 
 ## Asset policy
 
-All starter stickers, washi patterns, paper scraps, and stamps are original SVGs defined in the repository. They use familiar physical craft motifs—flowers, tape, paper, labels, stars, books—but are not copied from Pinterest images, commercial sticker packs, or other journal applications.
+All starter stickers, washi patterns, paper scraps, ephemera, and stamps are original SVGs defined in the repository. The ephemera are intentionally fictional: no real ticket, receipt, newspaper, postal, or brand artwork is copied. They use familiar physical craft motifs—flowers, tape, paper, labels, stars, books—but are not copied from Pinterest images, commercial sticker packs, or other journal applications.
 
 Pinterest and physical junk-journal culture were used only as broad interaction and material-language inspiration.
 

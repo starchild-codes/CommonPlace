@@ -9,6 +9,7 @@ const categories: { id: AssetCategory; label: string }[] = [
   { id: 'stickers', label: 'Stickers' },
   { id: 'washi', label: 'Washi' },
   { id: 'papers', label: 'Paper' },
+  { id: 'ephemera', label: 'Ephemera' },
   { id: 'stamps', label: 'Stamps' },
 ]
 
@@ -31,7 +32,7 @@ export function AssetLibrary() {
     if (!asset) return
     const element: VisualElement = {
       id: uid(asset.category),
-      kind: asset.category === 'papers' ? 'paper' : asset.category === 'stamps' ? 'stamp' : asset.category === 'washi' ? 'washi' : 'sticker',
+      kind: asset.category === 'papers' || asset.category === 'ephemera' ? 'paper' : asset.category === 'stamps' ? 'stamp' : asset.category === 'washi' ? 'washi' : 'sticker',
       assetId: asset.id,
       x: 100 + Math.random() * 90,
       y: 90 + Math.random() * 90,
@@ -49,7 +50,7 @@ export function AssetLibrary() {
     <section className="tool-section asset-tool">
       <span className="eyebrow">a drawer of tiny things</span>
       <h3>Decorate</h3>
-      <div className="asset-search"><Search size={15} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="flowers, blue, vintage…" /></div>
+      <div className="asset-search"><Search size={15} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="flowers, ticket, celestial…" /></div>
       {!query && (
         <div className="asset-category-row">
           {categories.map((item) => (

@@ -87,7 +87,7 @@ export interface WorkspaceState {
   activeJournalId: string | null
   activePageId: string | null
   selectedElementId: string | null
-  sidebarTab: 'write' | 'decorate' | 'paper' | 'photos'
+  sidebarTab: 'write' | 'decorate' | 'paper' | 'photos' | 'reflect'
   focusMode: boolean
   calmMode: boolean
 }

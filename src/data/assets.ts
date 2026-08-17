@@ -1,4 +1,6 @@
-export type AssetCategory = 'stickers' | 'washi' | 'papers' | 'stamps'
+import { extraAssets } from './extraAssets'
+
+export type AssetCategory = 'stickers' | 'washi' | 'papers' | 'ephemera' | 'stamps'
 
 export interface JournalAsset {
   id: string
@@ -60,7 +62,7 @@ const stamp = (id: string, name: string, text: string, color: string, tags: stri
   </svg>`),
 })
 
-export const assets: JournalAsset[] = [
+const baseAssets: JournalAsset[] = [
   sticker('flower-daisy', 'Daisy', `<circle cx="60" cy="60" r="17" fill="#e9bd5b"/><g fill="#fff7ea" stroke="#5f6859" stroke-width="2">${[0,45,90,135,180,225,270,315].map(a=>`<ellipse cx="60" cy="30" rx="13" ry="24" transform="rotate(${a} 60 60)"/>`).join('')}</g>`, ['flower','botanical']),
   sticker('flower-tulip', 'Pink tulip', `<path d="M58 108C57 82 61 60 62 43" stroke="#6f8d68" stroke-width="5"/><path d="M60 47C37 40 34 18 48 12 58 17 64 23 64 23 68 17 80 12 91 16 91 35 79 47 60 47Z" fill="#e8a7b5" stroke="#775966" stroke-width="2"/><path d="M59 75C43 67 35 71 31 83 44 88 53 84 59 75Z" fill="#89a97e"/>`, ['flower','pink']),
   sticker('moon', 'Sleepy moon', `<path d="M77 18c-23 8-32 36-19 56 11 17 33 22 49 11-8 18-29 29-51 23C28 101 13 72 24 45 34 22 57 10 77 18Z" fill="#f0cf74" stroke="#635c58" stroke-width="2"/><circle cx="47" cy="52" r="2.5" fill="#635c58"/><path d="M55 61q8 6 14-1" fill="none" stroke="#635c58" stroke-width="2"/>`, ['celestial','moon']),
@@ -111,6 +113,8 @@ export const assets: JournalAsset[] = [
   stamp('stamp-keep', 'Worth keeping', 'WORTH KEEPING', '#77866c', ['keep']),
   stamp('stamp-ordinary', 'Ordinary magic', 'ORDINARY MAGIC', '#af768e', ['magic']),
 ]
+
+export const assets: JournalAsset[] = [...baseAssets, ...extraAssets]
 
 export const assetById = new Map(assets.map((asset) => [asset.id, asset]))
 
