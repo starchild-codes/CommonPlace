@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use Commonplace in a project, please cite this repository."
+title: "Commonplace"
+type: software
+authors:
+  - family-names: "Srivastava"
+    given-names: "Anshima"
+version: 0.1.0
+date-released: 2026-08-17
+license: MIT
