@@ -73,9 +73,9 @@ export function JournalShelf() {
     <main className="shelf-shell">
       <header className="shelf-header">
         <div>
-          <div className="eyebrow"><Sparkles size={15} /> little things deserve a place</div>
+          <div className="eyebrow"><Sparkles size={15} /> for receipts you refuse to throw away</div>
           <h1>Commonplace</h1>
-          <p className="shelf-subtitle">A tactile digital junk journal. No streaks. No pressure. Just pages that can be yours.</p>
+          <p className="shelf-subtitle">A digital junk journal for words, photos, tape, tiny scraps and whatever else belongs on the page.</p>
         </div>
         <div className="shelf-actions">
           <button className="ghost-button" onClick={downloadLibrary}><Download size={17} /> Backup</button>
@@ -88,8 +88,8 @@ export function JournalShelf() {
       <section className="shelf-intro-card">
         <BookHeart size={22} />
         <div>
-          <strong>Made for memory, not metrics.</strong>
-          <span>Commonplace deliberately hides streaks, word counts and “you missed a day” nudges. Pick up a page when you want one.</span>
+          <strong>No streaks. No guilt. No gold stars for journaling every day.</strong>
+          <span>Open it when you have something to keep. Ignore it for three weeks if you do not. It will still be here.</span>
         </div>
       </section>
 
@@ -100,9 +100,9 @@ export function JournalShelf() {
             <div />
             <div />
           </div>
-          <h2>Your shelf is waiting.</h2>
-          <p>Make a cover first. The first page can be messy later.</p>
-          <button className="primary-button" onClick={() => setCreating(true)}><Plus size={17} /> Make my first journal</button>
+          <h2>Okay, your shelf is extremely empty.</h2>
+          <p>Make one journal. The first page is allowed to be ugly. That is basically the point.</p>
+          <button className="primary-button" onClick={() => setCreating(true)}><Plus size={17} /> Make a journal</button>
         </section>
       ) : (
         <section className="journal-grid">
@@ -139,8 +139,8 @@ export function JournalShelf() {
               }} large />
             </div>
             <div className="cover-controls">
-              <span className="eyebrow">make the outside feel like yours</span>
-              <h2>Design your cover</h2>
+              <span className="eyebrow">the cover matters too, obviously</span>
+              <h2>Make the cover cute</h2>
               <label>
                 Journal title
                 <input value={title} maxLength={42} onChange={(event) => setTitle(event.target.value)} />
@@ -179,7 +179,7 @@ export function JournalShelf() {
               </div>
               <div className="modal-actions">
                 <button className="ghost-button" onClick={() => setCreating(false)}>Not yet</button>
-                <button className="primary-button" onClick={onCreate}>Put it on my shelf</button>
+                <button className="primary-button" onClick={onCreate}>Yep, keep this one</button>
               </div>
             </div>
           </section>

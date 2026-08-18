@@ -56,11 +56,11 @@ export function JournalEditor() {
         <div className="topbar-center">
           <button className="icon-button" onClick={undo} disabled={history.length === 0} aria-label="Undo"><Undo2 size={18} /></button>
           <button className="icon-button" onClick={redo} disabled={future.length === 0} aria-label="Redo"><Redo2 size={18} /></button>
-          <span className="autosave-pill"><span className="save-dot" /> saved on this device</span>
+          <span className="autosave-pill"><span className="save-dot" /> saved here</span>
         </div>
 
         <div className="topbar-right">
-          <button className={`soft-button ${calmMode ? 'active' : ''}`} onClick={toggleCalmMode} title="Calm mode hides performance-like feedback">
+          <button className={`soft-button ${calmMode ? 'active' : ''}`} onClick={toggleCalmMode} title="Keep the app quiet and non-competitive">
             <Feather size={16} /> Calm
           </button>
           <button className="soft-button" onClick={toggleFocusMode}>

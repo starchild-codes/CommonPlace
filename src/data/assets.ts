@@ -1,6 +1,7 @@
 import { extraAssets } from './extraAssets'
+import { themeAssets } from './themeAssets'
 
-export type AssetCategory = 'stickers' | 'washi' | 'papers' | 'ephemera' | 'stamps'
+export type AssetCategory = 'stickers' | 'washi' | 'papers' | 'ephemera' | 'stamps' | 'wax'
 
 export interface JournalAsset {
   id: string
@@ -114,7 +115,7 @@ const baseAssets: JournalAsset[] = [
   stamp('stamp-ordinary', 'Ordinary magic', 'ORDINARY MAGIC', '#af768e', ['magic']),
 ]
 
-export const assets: JournalAsset[] = [...baseAssets, ...extraAssets]
+export const assets: JournalAsset[] = [...baseAssets, ...extraAssets, ...themeAssets]
 
 export const assetById = new Map(assets.map((asset) => [asset.id, asset]))
 

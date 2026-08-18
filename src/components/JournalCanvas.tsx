@@ -110,8 +110,8 @@ export const JournalCanvas = forwardRef<CanvasHandle, { page: JournalPage }>(
           </Stage>
         </div>
         <div className="canvas-caption">
-          <span>drag · resize · rotate · layer</span>
-          <small>{page.elements.length === 0 ? 'blank pages are allowed' : `${page.elements.length} pieces on this page`}</small>
+          <span>drag it · resize it · rotate it · make a mess</span>
+          <small>{page.elements.length === 0 ? 'blank page. completely legal.' : `${page.elements.length} pieces on this page`}</small>
         </div>
       </div>
     )

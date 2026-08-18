@@ -11,7 +11,7 @@ export function PhotoTool() {
   const onFile = (file?: File) => {
     if (!file) return
     if (!file.type.startsWith('image/')) {
-      alert('Choose an image file.')
+      alert('That one is not an image. Try a photo instead.')
       return
     }
     const reader = new FileReader()
@@ -44,21 +44,21 @@ export function PhotoTool() {
 
   return (
     <section className="tool-section">
-      <span className="eyebrow">your camera roll is ephemera too</span>
+      <span className="eyebrow">camera roll, meet scrapbook</span>
       <h3>Photos</h3>
       <button className="photo-drop" onClick={() => inputRef.current?.click()}>
         <ImagePlus size={30} />
-        <strong>Add a photo</strong>
+        <strong>Pick a photo</strong>
         <span>PNG, JPG, WEBP or GIF</span>
       </button>
       <input ref={inputRef} hidden type="file" accept="image/*" onChange={(event) => onFile(event.target.files?.[0])} />
       <div className="polaroid-tip">
         <div className="mini-polaroid">♡</div>
-        <p><strong>Tip:</strong> add one of the paper scraps behind a photo, rotate them a little differently, then send the paper to the back.</p>
+        <p><strong>Scrapbook trick:</strong> put a torn-paper piece behind the photo, rotate both a little differently, then send the paper to the back.</p>
       </div>
       <div className="privacy-card">
-        <strong>Private by default.</strong>
-        <p>Your journal and uploaded images stay in this browser's local storage. Commonplace v0.1 has no account and no analytics.</p>
+        <strong>Your photos stay yours.</strong>
+        <p>Commonplace keeps journals and uploaded images in this browser. There is no account, feed, ad tracker or mood dashboard hiding behind the cute tape.</p>
       </div>
     </section>
   )

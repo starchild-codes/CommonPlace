@@ -1,6 +1,6 @@
 # Roadmap
 
-## v0.1 — shipped in this repository
+## v0.1 — the journal exists
 
 - multiple journals
 - cover designer
@@ -8,7 +8,6 @@
 - six paper tones
 - freeform Konva canvas
 - styled text
-- 46 original decorations
 - photos
 - resize / rotate / layer / duplicate / lock
 - undo / redo
@@ -18,55 +17,41 @@
 - JSON library backup/restore
 - CI
 
-## v0.2 — tactile tools
+## v0.2 — the craft drawer gets serious
 
-- pencil
-- marker
-- eraser
-- straightedge
-- handwritten date tool
-- crop/mask photos
-- sticker recoloring
-- snapping that can be toggled off
+- 139 original journal pieces
+- ephemera drawer
+- optional reflection prompt deck
+- feeling-word palette
+- psychology and evidence-limit documentation
 
-## v0.3 — bigger journals
+## v0.3 — themes, wax, and one tiny candle
 
-- IndexedDB media layer
-- background image compression
-- per-journal backups
-- printable two-page spreads
-- PDF export
-- journal archive
+- 245 original journal pieces
+- 20 wax seals
+- 29 built-in theme packs
+- custom local theme-pack maker
+- small personal-image slots inside custom packs
+- story-vibe, aesthetic, hobby, place, sport and color shelves
+- candle corner with eight imaginary scents
+- friendlier, less product-y interface language
 
-## v0.4 — ownership
+## Next things actually worth building
 
-- custom sticker packs
-- font import
-- reusable personal scraps
-- locally saved page templates
-- optional journal passphrase
+- IndexedDB media storage so photo-heavy journals do not fight local-storage limits
+- pencil / marker / eraser
+- crop and mask tools for photos
+- reusable two-page spreads
+- printable PDF export
+- favorites and recently used materials
+- local font import
+- user-made prompt decks
+- stronger keyboard navigation and accessibility
+- optional local journal passphrase, using a reviewed browser-crypto design
+- PWA install / offline shell
 
-## v1.0 principles
+## One rule for future features
 
-A feature does not belong merely because competitors have it.
+A feature does not belong just because another journal app has it.
 
-Every major feature should answer at least one:
-- Does this make expression easier?
-- Does this make the journal feel more owned?
-- Does this protect the user's work?
-- Does this reduce friction without increasing pressure?
-
-
-## Craft library directions
-
-- user-made sticker and ephemera packs
-- importable local SVG/PNG packs with clear provenance
-- user favorites and recently used materials
-- seasonal packs that remain optional rather than engagement events
-
-## Reflection directions
-
-- user-authored prompt decks
-- hide Reflect entirely for users who only want a scrapbook
-- usability study on whether prompt explanations feel helpful or intrusive
-- no automated psychological inference from private journal text
+It should make the page easier to make, more personal, safer to keep, or more fun to come back to. If it mostly creates pressure, tracking, or dashboard noise, it probably does not belong here.

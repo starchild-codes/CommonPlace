@@ -1,79 +1,85 @@
 # Commonplace
 
-**A tactile, local-first digital junk journal for people who want a diary to feel handmade.**
+**A local-first digital junk journal that is allowed to be a little ridiculous.**
 
-Commercial digital journals often optimize for consistency: streaks, reminders, templates, dashboards, and metrics. Commonplace optimizes for something else: *wanting to return to the page*.
+Commonplace is for the page with a photo, three lines of writing, a train ticket, two pieces of tape, a wax seal and a sticker that has absolutely no practical reason to be there.
 
-It is a browser-based scrapbook diary where every journal has a customizable cover and every page can be plain, ruled, dotted, or gridded. Users can write in multiple voices, layer photos with torn paper, add stickers and washi tape, rotate and resize scraps, lock finished background pieces, and export finished pages as PNGs.
+It is a browser-based scrapbook diary with customizable covers, plain/ruled/dotted/grid paper, draggable journal pieces, photos, styled text, theme packs, reflection prompts and a tiny candle you can light because apparently that matters. It does.
 
-Commonplace deliberately has no streak counter, no word-count goal, no social feed, and no account requirement in v0.1.
+There are no streaks, word-count goals, “you missed a day” notifications, social feeds or mood scores.
 
-## What it does
+## What is in v0.3
 
 - **Journal shelf** with multiple journals and custom covers
-- **Cover designer** with original patterns, palettes, motifs, and book-like previews
-- **Per-page paper choice:** plain, ruled, dotted, or grid
-- **Six paper tones** from ivory to lavender
-- **Freeform page canvas** with drag, resize, rotate, layer, duplicate, lock, and delete
-- **Text styling** with handwriting, serif, literary, rounded, clean, and typewriter voices
-- **130+ original decorative assets** across stickers, washi, torn papers, ephemera, and stamps
-- **Ephemera drawer** with fictional tickets, library cards, postcards, receipts, map fragments, astronomy charts, photo strips, and more
-- **Photo uploads** stored locally with the journal
+- **Cover designer** with palettes, textures and little emblems
+- **Plain, ruled, dotted and grid pages**
+- **Six paper colors**: ivory, white, blush, sage, lavender and sky
+- **Freeform canvas** with drag, resize, rotate, layer, duplicate, lock and delete
+- **Six bundled writing voices** from handwritten to typewriter
+- **245 original built-in craft assets**
+- **Stickers, washi, torn paper, ephemera, stamps and wax seals**
+- **20 wax seals** in colors from rose and lavender to midnight, cricket green and cosmic blue
+- **29 built-in theme packs** across story vibes, aesthetics, hobbies, places, sports and colors
+- **Custom theme-pack maker** for extremely specific obsessions
+- **Up to 40 built-in pieces + eight small personal images per custom pack**
+- **Reading, travel, space, ocean, city, cricket, football, dark academia, fairycore and color packs**
+- **Story-vibe packs** such as Wizard School After Dark, Silver & Green, Golden & Kind, Brilliant Bookworm, Midnight Diary, Coastal Summer, Apartment Hangout and Young Genius Desk
+- **Photo uploads** that stay with the local journal
+- **Optional prompt deck** for when your brain has nothing useful to say to “dear diary”
+- **Feeling-word palette** with no mood score attached
+- **Candle corner** with eight pretend scents and an animated flame
 - **Undo / redo**
-- **Autosave to the browser**
-- **Focus mode** that removes the editor chrome
-- **Calm mode** that keeps performance-like feedback out of the experience
-- **Optional Reflect deck** with low-pressure prompts for noticing, emotion vocabulary, perspective, values, memory, and closure
-- **Feeling palette** for more precise emotion words without mood scores or diagnoses
-- **PNG export** for finished pages
-- **JSON backup / restore** for the whole journal shelf
-- **No analytics or cloud account** in v0.1
+- **Autosave in the browser**
+- **Focus mode**
+- **PNG page export**
+- **JSON backup / restore** for the whole shelf
 
-## Why the interface works this way
+## Theme packs
 
-Commonplace is designed around a few behavioral and cognitive principles rather than around engagement metrics:
+The Theme Packs tab is basically a shortcut through the giant craft drawer.
 
-1. **Progressive disclosure.** Writing, decoration, paper, photos, and element inspection live in separate surfaces. The page does not show every control at once.
-2. **External cognition.** Position, overlap, rotation, grouping, and visual salience are treated as meaningful parts of journaling rather than flattened into a text document.
-3. **Recognition over recall.** Decorative materials are presented visually, with categories and search, instead of requiring users to remember commands.
-4. **Low-pressure re-entry.** There are no streaks or missed-day warnings. A blank page is explicitly treated as a valid state.
-5. **Autonomy.** Users can change the paper beneath an existing collage without losing their work, and can lock settled elements while continuing elsewhere.
-6. **Memory cues.** Photos, ephemera-like scraps, stamps, and visual clusters support cue-rich pages rather than chronological text only.
-7. **Forgiveness.** Undo/redo, autosave, duplicate, and non-destructive styling make experimentation cheap.
+Pick **Space Dreamer** and you get observatory scraps, planets, night-blue tape, cosmic wax and starry pieces. Pick **Cricket Day** and you get match stubs, green tape, score-card bits and sport-themed seals. Pick **Pink Everything** and the design brief is, very seriously, “pink.”
 
-See [`docs/PSYCHOLOGY.md`](docs/PSYCHOLOGY.md) for the full design rationale and [`docs/REFERENCES.md`](docs/REFERENCES.md) for the research references behind the broad interaction principles.
+Built-in packs are original atmosphere packs. They do not ship copyrighted character art, actor photos, show logos, team logos or celebrity likenesses.
 
-## Screens
+For fandoms, favorite characters, players, inside jokes, cities, specific books, or one weirdly exact aesthetic, use **Make your own pack**. A custom pack can be named anything, can collect built-in pieces, and can hold a few personal images. Those packs stay in the browser.
 
-### Shelf
+See [`docs/THEME_PACKS.md`](docs/THEME_PACKS.md).
 
-A quiet library-like home screen showing journals as tactile covers rather than generic dashboard cards.
+## Why it is designed like this
 
-### Cover designer
+Commonplace tries to make the start of a page easy without turning journaling into a performance.
 
-Choose a palette, cover texture, and emblem before opening the journal. The cover is not metadata; it is part of the object.
+- **Small tool surfaces:** writing, paper, photos, decoration, themes and prompts live in separate tabs instead of throwing every control at the user at once.
+- **Visual grouping:** theme packs make hundreds of objects easier to browse by giving them recognizable contexts.
+- **Spatial memory:** overlap, position, rotation and grouping stay part of the page instead of being flattened into a text document.
+- **Cheap experimentation:** undo/redo, autosave, duplicate and non-destructive styling make it safe to mess around.
+- **No re-entry guilt:** a journal can sit untouched for weeks. Nothing scolds you when you come back.
+- **Optional reflection:** prompts are there when useful and ignorable when not. No diagnosis, treatment claim or forced gratitude exercise.
 
-### Page editor
+The evidence and limits are documented in [`docs/PSYCHOLOGY.md`](docs/PSYCHOLOGY.md) and [`docs/REFERENCES.md`](docs/REFERENCES.md). The app itself keeps the research-y language out of the way.
 
-The editor has five primary tools:
+## Editor tabs
 
-- **Write** — add a text fragment and style its voice
-- **Decorate** — stickers, washi, scraps, and stamps
-- **Paper** — page pattern and tone
-- **Photos** — local image uploads
-- **Reflect** — optional psychology-informed prompts with no scoring, diagnosis, or forced positivity
+- **Write** — type something and put it on the page
+- **Bits** — stickers, tape, paper, ephemera, stamps and wax seals
+- **Themes** — browse built-in packs or make your own
+- **Paper** — choose the page pattern and paper color
+- **Photos** — add local images
+- **Prompts** — optional reflection questions and feeling words
+- **Candle** — choose an imaginary scent and light the tiny candle
 
-Select anything on the page to reveal its inspector. Unselected tools stay out of the way.
+Select any page element to open its inspector for size, rotation, opacity, layering and text styling.
 
 ## Tech
 
 - React + TypeScript
 - Vite
-- Konva / react-konva for the tactile canvas
-- Zustand persistence for local-first journal state
-- `@fontsource` packages for bundled offline fonts
-- Vitest for model and catalog tests
-- GitHub Actions for typecheck, tests, and production build
+- Konva / react-konva for the freeform page canvas
+- Zustand for local journal persistence
+- `@fontsource` packages for bundled fonts
+- Vitest for model, asset, pack and data tests
+- GitHub Actions for typecheck, tests and production build
 
 ## Run locally
 
@@ -84,7 +90,7 @@ npm install
 npm run dev
 ```
 
-Then open the local URL printed by Vite.
+Open the local URL printed by Vite.
 
 ## Verify
 
@@ -92,13 +98,7 @@ Then open the local URL printed by Vite.
 npm run check
 ```
 
-That runs:
-
-```text
-typecheck
-tests
-production build
-```
+That runs typecheck, tests and a production build.
 
 ## Repository structure
 
@@ -107,64 +107,58 @@ Commonplace/
 ├── .github/workflows/ci.yml
 ├── docs/
 │   ├── DESIGN.md
-│   ├── PSYCHOLOGY.md
 │   ├── PRIVACY.md
+│   ├── PSYCHOLOGY.md
 │   ├── REFERENCES.md
-│   └── ROADMAP.md
+│   ├── ROADMAP.md
+│   └── THEME_PACKS.md
 ├── src/
 │   ├── components/
-│   ├── data/assets.ts
-│   ├── data/extraAssets.ts
-│   ├── data/reflectionPrompts.ts
+│   │   ├── ThemePackBrowser.tsx
+│   │   ├── CandleTool.tsx
+│   │   └── ...
+│   ├── data/
+│   │   ├── assets.ts
+│   │   ├── extraAssets.ts
+│   │   ├── themeAssets.ts
+│   │   ├── themePacks.ts
+│   │   ├── candles.ts
+│   │   └── reflectionPrompts.ts
 │   ├── store/useJournalStore.ts
 │   ├── tests/
 │   ├── utils/model.ts
 │   ├── App.tsx
-│   ├── main.tsx
 │   ├── styles.css
 │   └── types.ts
-├── index.html
 ├── package.json
 └── vite.config.ts
 ```
 
 ## Asset policy
 
-All starter stickers, washi patterns, paper scraps, ephemera, and stamps are original SVGs defined in the repository. The ephemera are intentionally fictional: no real ticket, receipt, newspaper, postal, or brand artwork is copied. They use familiar physical craft motifs—flowers, tape, paper, labels, stars, books—but are not copied from Pinterest images, commercial sticker packs, or other journal applications.
+Built-in stickers, tape, paper, ephemera, stamps and wax seals are original SVGs defined in the repository. Fictional tickets, receipts and cards use familiar junk-journal material language without copying real commercial assets.
 
-Pinterest and physical junk-journal culture were used only as broad interaction and material-language inspiration.
+Commonplace does **not** bundle official franchise art, celebrity/player likenesses, studio imagery, team logos or commercial sticker packs. The custom-pack feature lets users add their own small personal images locally instead.
 
 ## Privacy
 
-Commonplace v0.1 is local-first:
+Commonplace is local-first:
 
 - no login
 - no analytics
 - no remote database
 - no advertising SDK
-- no server upload
+- no social feed
 
-Journal state is persisted in browser storage. Large photo-heavy journals can eventually hit browser-storage limits, which is why the UI includes library backup/export. See [`docs/PRIVACY.md`](docs/PRIVACY.md).
+Journal state and custom packs live in browser storage. Photo-heavy journals and image-heavy custom packs can eventually hit browser storage limits, so the app includes backup/export and caps custom-pack image size.
+
+See [`docs/PRIVACY.md`](docs/PRIVACY.md).
 
 ## Scope
 
-Commonplace is not trying to reproduce every feature of Canva, Goodnotes, Notion, or a professional illustration editor. The aim is narrower: make freeform personal journaling feel delightful without making the user manage a design application.
+This is not trying to become Canva with a diary icon taped onto it. The point is a smaller, warmer editor built around personal pages.
 
-## Roadmap
-
-The next serious features would be:
-
-- IndexedDB-backed media storage for larger photo journals
-- freehand pencil / highlighter / eraser
-- reusable page spreads
-- optional password-encrypted local journals
-- printable two-page PDF export
-- keyboard nudging and stronger accessibility
-- user-made sticker packs
-- local font import
-- PWA install / offline shell
-
-See [`docs/ROADMAP.md`](docs/ROADMAP.md).
+Future work includes larger IndexedDB-backed media storage, freehand drawing, printable spreads, encrypted local journals, stronger keyboard accessibility, local font import and a PWA/offline shell.
 
 ## License
 

@@ -199,3 +199,11 @@ Some prompts explicitly permit stopping:
 - mark the page “finished enough”
 
 This is consistent with the broader Commonplace stance that journaling does not need to culminate in insight, catharsis, positivity, or a lesson.
+
+## v0.3: make choice feel smaller without making the journal smaller
+
+The Theme Packs view is partly an interaction-design decision. A few hundred ungrouped decorative objects create search work before journaling even starts. Commonplace groups the same reusable objects into recognizable contexts (for example Reading Life, Ocean Drift, Cricket Day, or Pink Everything), then lets the user break the grouping immediately. This is progressive disclosure rather than a recommendation engine: nothing is ranked by engagement and no pack is treated as a personality label.
+
+The prompt interface also drops most research-language microcopy from the live product. The evidence notes stay in this document; the actual journal sounds like a journal. A prompt is something a user can skip, not an intervention they are expected to complete.
+
+The candle is deliberately *not* framed as a focus or mental-health tool. It is decorative ambience with an animated flame and imaginary scent notes. There is no timer, productivity score, breathing instruction, or claim that lighting it changes mood.

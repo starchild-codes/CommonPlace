@@ -1,6 +1,6 @@
 # Privacy and data model
 
-Commonplace v0.1 is intentionally local-first.
+Commonplace v0.3 is local-first.
 
 ## What leaves the browser?
 
@@ -22,19 +22,24 @@ That includes:
 - journal metadata
 - cover settings
 - pages
-- canvas positions/styles
-- uploaded images as data URLs
+- canvas positions and styles
+- uploaded page images as data URLs
+
+Custom theme packs use a separate local-storage key. A custom pack can contain:
+- a name, emoji and color
+- references to built-in journal pieces
+- up to eight personal images stored as data URLs
+
+The custom-pack UI rejects individual images larger than 700 KB to reduce the chance of silently exhausting browser storage.
 
 ## Important limitation
 
-Browser local storage is not appropriate for unlimited photo collections. Photo-heavy journals may eventually exceed storage quotas.
+Browser local storage is not built for an unlimited photo archive. Photo-heavy journals or several image-heavy custom packs may eventually hit the browser's storage quota.
 
-The current mitigation is explicit JSON backup/restore.
-
-A production-scale version should move image blobs to IndexedDB while keeping structured journal metadata separate.
+The journal shelf includes explicit JSON backup/restore. A larger future version should move image blobs to IndexedDB while keeping structured journal metadata separate.
 
 ## Threat model
 
-Commonplace v0.1 does not encrypt journal data at rest. Anyone with access to the same unlocked browser profile may be able to inspect local application storage.
+Commonplace does not encrypt journal data at rest. Anyone with access to the same unlocked browser profile may be able to inspect local application storage.
 
 A future encrypted-journal mode should use a well-reviewed browser cryptography design rather than home-grown encryption.

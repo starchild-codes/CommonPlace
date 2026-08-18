@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.3.0 — Theme packs, wax seals, and one tiny candle
+
+- Added 29 built-in original theme packs across story vibes, aesthetics, hobbies, places, sports, and colors.
+- Added a local custom theme-pack maker with up to 40 built-in pieces and eight personal images.
+- Added 106 new original themed craft assets, including 20 wax seals.
+- Added a dedicated Wax Seals drawer.
+- Added an animated candle corner with eight pretend scent choices.
+- Rewrote visible microcopy across writing, paper, photos, prompts, shelf, and editor so the app sounds less like product copy and more like a journal.
+- Kept fandom-specific names and personal images in user-created local packs rather than shipping franchise art.
+- Added tests for theme-pack coverage, wax seals, and candle data.
+- Added `docs/THEME_PACKS.md` and expanded the psychology notes.
+
 ## 0.2.0 — craft + reflection expansion
 
 - expands the original craft drawer to 130+ generated SVG assets

@@ -6,10 +6,10 @@ import type { TextElement } from '../types'
 import { uid } from '../utils/model'
 
 const effortOptions: { id: ReflectionEffort | 'all'; label: string }[] = [
-  { id: 'tiny', label: '30 sec' },
-  { id: 'short', label: '2 min' },
-  { id: 'deeper', label: 'deeper' },
-  { id: 'all', label: 'anything' },
+  { id: 'tiny', label: 'one line' },
+  { id: 'short', label: 'a minute' },
+  { id: 'deeper', label: 'go there' },
+  { id: 'all', label: 'surprise me' },
 ]
 
 const promptInk = '#5d5263'
@@ -62,11 +62,11 @@ export function ReflectionTool() {
 
   return (
     <section className="tool-section reflection-tool">
-      <span className="eyebrow">reflection without a score</span>
-      <h3>Reflect</h3>
-      <p className="tool-hint">Pick a doorway, not an assignment. Skip anything that feels unhelpful.</p>
+      <span className="eyebrow">when “dear diary” is not giving anything</span>
+      <h3>Give me a question</h3>
+      <p className="tool-hint">No homework. Tap around until one question feels worth answering. Ignore the rest.</p>
 
-      <div className="reflection-effort" aria-label="Reflection effort">
+      <div className="reflection-effort" aria-label="How much do you feel like writing?">
         {effortOptions.map((option) => (
           <button key={option.id} className={effort === option.id ? 'active' : ''} onClick={() => { setEffort(option.id); setIndex(0) }}>
             {option.label}
@@ -88,17 +88,16 @@ export function ReflectionTool() {
           <span>{prompt.title}</span>
         </div>
         <p>{prompt.prompt}</p>
-        <small>{prompt.why}</small>
         <div className="reflection-card-actions">
-          <button className="soft-button" onClick={shuffle}><Shuffle size={14} /> Another</button>
-          <button className="primary-button small" onClick={() => putTextOnPage(prompt.prompt, true)}><Plus size={14} /> Put on page</button>
+          <button className="soft-button" onClick={shuffle}><Shuffle size={14} /> nope, another</button>
+          <button className="primary-button small" onClick={() => putTextOnPage(prompt.prompt, true)}><Plus size={14} /> put it on the page</button>
         </div>
       </article>
 
       <div className="feeling-palette">
         <div>
-          <strong>Feeling palette</strong>
-          <span>choose up to three; “mixed” is allowed</span>
+          <strong>Okay, but what kind of feeling?</strong>
+          <span>pick up to three. contradictory is completely fine.</span>
         </div>
         <div className="feeling-grid">
           {feelingWords.map((word) => (
@@ -109,14 +108,14 @@ export function ReflectionTool() {
         </div>
         {pickedFeelings.length > 0 && (
           <button className="soft-button full" onClick={() => putTextOnPage(`Right now: ${pickedFeelings.join(' + ')}. What gave those words away?`)}>
-            <Plus size={14} /> Put these words on the page
+            <Plus size={14} /> add these words
           </button>
         )}
       </div>
 
       <div className="reflection-boundary">
-        <strong>No diagnosis. No forced positivity.</strong>
-        <p>Commonplace offers optional reflection cues, not treatment or a promise that journaling will improve mental health.</p>
+        <strong>Just prompts, not therapy.</strong>
+        <p>Use what helps, skip what does not. Commonplace does not diagnose you, score your mood, or promise that journaling fixes things.</p>
       </div>
     </section>
   )

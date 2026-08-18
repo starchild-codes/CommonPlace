@@ -11,6 +11,7 @@ const categories: { id: AssetCategory; label: string }[] = [
   { id: 'papers', label: 'Paper' },
   { id: 'ephemera', label: 'Ephemera' },
   { id: 'stamps', label: 'Stamps' },
+  { id: 'wax', label: 'Wax seals' },
 ]
 
 export function AssetLibrary() {
@@ -32,7 +33,13 @@ export function AssetLibrary() {
     if (!asset) return
     const element: VisualElement = {
       id: uid(asset.category),
-      kind: asset.category === 'papers' || asset.category === 'ephemera' ? 'paper' : asset.category === 'stamps' ? 'stamp' : asset.category === 'washi' ? 'washi' : 'sticker',
+      kind: asset.category === 'papers' || asset.category === 'ephemera'
+        ? 'paper'
+        : asset.category === 'stamps'
+          ? 'stamp'
+          : asset.category === 'washi'
+            ? 'washi'
+            : 'sticker',
       assetId: asset.id,
       x: 100 + Math.random() * 90,
       y: 90 + Math.random() * 90,
@@ -48,9 +55,10 @@ export function AssetLibrary() {
 
   return (
     <section className="tool-section asset-tool">
-      <span className="eyebrow">a drawer of tiny things</span>
-      <h3>Decorate</h3>
-      <div className="asset-search"><Search size={15} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="flowers, ticket, celestial…" /></div>
+      <span className="eyebrow">the good drawer</span>
+      <h3>Little things</h3>
+      <p className="tool-hint">Stickers, scraps, tickets, tape, wax seals and other tiny nonsense that somehow makes the page better.</p>
+      <div className="asset-search"><Search size={15} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="flowers, tickets, stars, green…" /></div>
       {!query && (
         <div className="asset-category-row">
           {categories.map((item) => (
@@ -66,7 +74,7 @@ export function AssetLibrary() {
           </button>
         ))}
       </div>
-      <p className="asset-note">All starter art is original SVG made for this repo — inspired by junk-journal craft language, not copied from commercial sticker packs.</p>
+      <p className="asset-note">The built-in art is original. The custom theme-pack maker is where you can add your own personal images.</p>
     </section>
   )
 }

@@ -1,17 +1,21 @@
-import { ImagePlus, Layers3, NotebookPen, Palette, Sparkles } from 'lucide-react'
+import { Flame, ImagePlus, Layers3, NotebookPen, PackageOpen, Palette, Sparkles } from 'lucide-react'
 import { useJournalStore } from '../store/useJournalStore'
 import { AssetLibrary } from './AssetLibrary'
+import { CandleTool } from './CandleTool'
 import { PaperControls } from './PaperControls'
 import { PhotoTool } from './PhotoTool'
-import { WriteTool } from './WriteTool'
 import { ReflectionTool } from './ReflectionTool'
+import { ThemePackBrowser } from './ThemePackBrowser'
+import { WriteTool } from './WriteTool'
 
 const tabs = [
   { id: 'write' as const, label: 'Write', icon: NotebookPen },
-  { id: 'decorate' as const, label: 'Decorate', icon: Layers3 },
+  { id: 'decorate' as const, label: 'Bits', icon: Layers3 },
+  { id: 'themes' as const, label: 'Themes', icon: PackageOpen },
   { id: 'paper' as const, label: 'Paper', icon: Palette },
   { id: 'photos' as const, label: 'Photos', icon: ImagePlus },
-  { id: 'reflect' as const, label: 'Reflect', icon: Sparkles },
+  { id: 'reflect' as const, label: 'Prompts', icon: Sparkles },
+  { id: 'cozy' as const, label: 'Candle', icon: Flame },
 ]
 
 export function ToolSidebar() {
@@ -31,9 +35,11 @@ export function ToolSidebar() {
       <div className="tool-content">
         {tab === 'write' && <WriteTool />}
         {tab === 'decorate' && <AssetLibrary />}
+        {tab === 'themes' && <ThemePackBrowser />}
         {tab === 'paper' && <PaperControls />}
         {tab === 'photos' && <PhotoTool />}
         {tab === 'reflect' && <ReflectionTool />}
+        {tab === 'cozy' && <CandleTool />}
       </div>
     </aside>
   )

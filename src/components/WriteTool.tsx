@@ -7,7 +7,7 @@ import { uid } from '../utils/model'
 export const fontOptions = [
   { value: '"Caveat", cursive', label: 'Handwritten' },
   { value: '"Source Serif 4", serif', label: 'Diary serif' },
-  { value: '"Playfair Display", serif', label: 'Literary' },
+  { value: '"Playfair Display", serif', label: 'Bookish' },
   { value: '"Nunito", sans-serif', label: 'Soft round' },
   { value: '"DM Sans", sans-serif', label: 'Clean' },
   { value: '"Space Mono", monospace', label: 'Typewriter' },
@@ -47,12 +47,12 @@ export function WriteTool() {
 
   return (
     <section className="tool-section">
-      <span className="eyebrow">words, not word counts</span>
-      <h3>Add writing</h3>
-      <p className="tool-hint">Type here first, then place it on the page. You can restyle it anytime.</p>
-      <textarea value={text} onChange={(event) => setText(event.target.value)} rows={5} placeholder="Today felt like…" />
+      <span className="eyebrow">write two words or two pages. nobody is counting.</span>
+      <h3>Words</h3>
+      <p className="tool-hint">Type it here, toss it onto the page, then move it around until it looks right.</p>
+      <textarea value={text} onChange={(event) => setText(event.target.value)} rows={5} placeholder="Okay so today…" />
       <label>
-        Voice
+        Font
         <select value={font} onChange={(event) => setFont(event.target.value)}>
           {fontOptions.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}
         </select>
@@ -64,11 +64,11 @@ export function WriteTool() {
           <span>{color}</span>
         </div>
       </label>
-      <button className="primary-button full" onClick={addText}><Plus size={16} /> Put on page</button>
+      <button className="primary-button full" onClick={addText}><Plus size={16} /> Put it on the page</button>
 
       <div className="gentle-prompt">
-        <span>tiny prompt</span>
-        <p>What is one detail from today that future-you might otherwise forget?</p>
+        <span>stuck?</span>
+        <p>Write one tiny thing from today that would be annoying to forget.</p>
       </div>
     </section>
   )
